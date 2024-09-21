@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="shiva.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2986e9d676.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+        @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    
+    .float {
+      animation: float 3s ease-in-out infinite;
+      display: inline-block;
+    }
+    .underline-animation {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      padding-bottom: 2px;
+    }
+    
+    .underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0D47A1;
+      transition: width 0.4s ease;
+    }
+    
+    .underline-animation:hover::after {
+      width: 100%;
+    }
+    .typing-container {
+      font-family: monospace;
+      font-size: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid black;
+      animation: blinkCursor 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blinkCursor {
+      from { border-right-color: black; }
+      to { border-right-color: transparent; }
+    }
+    </style>
+</head>
+
+<body class="m-0 p-0 bg-indigo-100">
+
+   <nav class="h-20 m-5 font-semibold text-blue-900 flex justify-between items-center">
+    <div class="text-5xl p-20 text-sky-400">
+        <a href=""><p class="font-bold"><span class="text-sky-600">S</span>HIV@</p></a>
+    </div>
+    <ul class="flex gap-10 p-20 text-2xl ">    
+        <a href="#about" class="underline-animation">About</a>
+        <a href="#contact" class="underline-animation">Contact</a>
+        <a href="https://github.com/shiva3330" class="underline-animation">Projects</a>
+        <a href="ShivaResume.pdf" class="underline-animation">Resume</a>
+    </ul>
+   </nav>
+
+   <main class="flex justify-around m-20">
+    
+       <div class="w-1/2 text-6xl">
+        <div>Hi,</div>
+        <span>I'm</span>
+        <span class="text-blue-900 hover:text-blue-600">SHIVA</span> 
+        <div>Web Developer</div>
+        <div class="text-blue-600">
+            <span id="element"></span>
+            <script>
+                var typed = new Typed('#element', {
+                  strings: ['Ui Designer', '&amp; Programmer ','Problem Solver'],
+                  typeSpeed: 90,
+                });
+              </script>
+        </div>
+        
+        <div class="w-fit flex items-center p-5 gap-2">
+            <button class="text-xl p-3 rounded-md border-2 border-black hover:bg-black hover:text-white"><a href="ShivaResume.docx">DownloadCV</a></button>
+            <button class="text-xl p-3 rounded-md border-2 border-black hover:bg-black hover:text-white"><a href="#contact">Contact</a></button>
+            <div class="text-4xl flex gap-5">
+                <a href="https://github.com/shiva3330"><i class="fa-brands fa-github hover:text-gray-600"></i></a>
+                <a href="https://linkedin.com/in/shiva-palakurthi-b73a8b271"><i class="fa-brands fa-linkedin hover:text-gray-600"></i></a>
+            </div>
+        </div>
+        </div>
+
+       <div class="w-[30%]">
+           <img src="dev.png" class="float">
+       </div>
+   </main>
+
+
+    <div id="about" class="m-40 flex justify-between">
+       
+        <div class="w-[50%]">
+            <img src="shiva.png" class="w-[70%]">
+            <div class="p-10 flex flex-col gap-5 text-lg font-normal">
+                <p>Name: <span class="text-xl text-blue-900">Shiva Palakurthi</span></p>
+                <p>Education: <span class="text-xl text-blue-900">B-tech Computer Science</span></p>
+                <p>Language: <span class="text-xl text-blue-900">English, Telugu, Hindi</span></p>
+            </div>
+        </div>
+        
+        <div class="w-[50%] text-xl flex flex-col font-light">
+            <p class="text-6xl font-semibold pb-5">About Me</p>
+            I love to build things and deploy them as being a web developer i have built some projects with time & efforts
+            Seeking for oppurtunities for upgrading my skills to next level and work in collaborative environment to gain experience 
+            You can check my Linkedin Github profiles to see my projects and contact
+                <p class="text-4xl pt-3 pb-3 font-light">Skills</p>
+
+                <div class="flex flex-col gap-5">
+
+                    <span class="text-2xl">Web Development
+                        <p class="font-normal text-2xl text-blue-900">MongoDB, mySQL, Express JS, Node JS, React JS, Tailwind Css</p>
+                    </span>
+
+                    <span class="text-2xl">Programming Languages
+                        <p class="font-normal text-2xl text-blue-900">JavaScript, C, C++, Python, Java, Sql</p>
+                    </span>
+
+                    <span class="text-2xl">Editing
+                        <p class="font-normal text-2xl text-blue-900">Photoshop, Wondershare Filmora & Designing</p>
+                    </span>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="projects" class="m-20 flex flex-col gap-5">
+        <span class="text-3xl m-5 font-bold text-center text-gray-800">Projects</span>
+        <div class="text-2xl flex justify-center gap-5">
+            <div><video controls src="" class="rounded-3xl"></video>About Project</div>
+            <div><video controls src="" class="rounded-3xl"></video>About Project</div>
+            <div><video controls src="" class="rounded-3xl"></video>About Project</div>
+        </div>
+    </div> -->
+
+    <div id="contact" class="m-20 flex flex-col gap-20">
+        <h1 class="text-center text-4xl font-bold">Contact me <br>
+            <span class="text-xl font-normal">Below are the details to reach out me</span>
+        </h1>
+        <div class="flex justify-center gap-20 text-xl font-bold">
+            <div class="flex flex-col items-center gap-5">
+                <i class="fa-solid fa-home rounded-[50%] bg-blue-200 p-10 text-4xl "></i>ADDRESS
+                <span class="text-sm font-normal">Hyderabad,Telangana</span>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <i class="fa-solid fa-phone rounded-[50%] bg-blue-200 p-10 text-4xl"></i>CONTACT NUMBER
+                <span class="text-sm font-normal">+91 9381548520</span>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <i class="fa-solid fa-paper-plane rounded-[50%] bg-blue-200 p-10 text-4xl"></i>EMAIL ADDRESS
+                <span class="text-sm font-normal"><a href="mailto:shivapalakurthi69@gmail.com">
+                shivapalakurthi69@gmail.com</span></a>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <i class="fa-solid fa-cloud-arrow-down rounded-[50%] bg-blue-200 p-10 text-4xl"></i>DOWNLOAD RESUME
+                <span class="text-sm font-normal" ><a href="ShivaResume.docx">Resume.link</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="findme" class="m-10 text-3xl flex justify-center items-center gap-5">
+        <span class="text-xl font-semibold">find me on</span>
+        <span><a href="https://linkedin.com/in/shiva-palakurthi-b73a8b271"><i class="fa-brands fa-linkedin"></i></a></span>
+        <span><a href="https://x.com/shivaaa33"><i class="fa-brands fa-twitter"></i></a></span>
+        <span><a href="https://www.instagram.com/shivaaa_3/"><i class="fa-brands fa-square-instagram"></i></a></span>
+        <span><a href=""><i class="fa-brands fa-facebook"></i></a></span>
+    </div>
+
+   <footer class="h-10 text-center p-2 font-semibold bg-indigo-400">Copyright © 𝒔𝒉𝒊𝒗𝒂, Thankyou for Visiting ^_^</footer>
+   
+</body>
+</html>
