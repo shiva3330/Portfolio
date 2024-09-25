@@ -8,7 +8,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/2986e9d676.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&display=swap');
+    .playwrite-de-grund-myfont{
+     font-family: "Playwrite DE Grund", cursive;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+    }
+    .skillfont{
+        color: rgb(30, 72, 88);
+        font-weight: bold;
+        font-size: 1.4rem;
+        transition: text-shadow 0.1s ease;
+        cursor: pointer;
+    }
+    .skillfont:hover{
+        text-shadow: 0.5px 0.5px 0.5px;
+    }
         @keyframes float {
       0%, 100% {
         transform: translateY(0);
@@ -72,7 +92,7 @@
 <body class="m-0 p-0 bg-indigo-100">
     
 
-        <nav class="fixed p-3 shadow-md top-0 left-0 w-full bg-indigo-100 text-blue-900 text-2xl font-semibold max-[430px]:hidden" onscroll="">
+        <nav class="fixed p-3 shadow-sm top-0 left-0 w-full bg-indigo-100 text-blue-900 text-2xl font-semibold max-[430px]:hidden">
             <div class="container mx-auto px-4 py-3 flex justify-between items-center">
               <div class="fixed left-20"><a href="#main">
                   <span class="text-sky-800 text-6xl transition-all duration-100  hover:text-7xl"><i>S</i></span>
@@ -139,9 +159,10 @@
 
 
     <div id="about" class="pt-[100px] m-40 flex justify-between max-[430px]:flex-col max-[430px]:m-10 max-[430px]:gap-20">
+
         <div class="w-[50%] max-[430px]:w-[100%]">
             <div class="max-[430px]:w-[100%] max-[430px]:flex max-[430px]:justify-center">
-                <img src="shiva.png" class="w-[70%] max-[430px]:w-[60%]">
+                <img src="shiva.png" class="w-[70%] pb-5 max-[430px]:w-[80%] max-[430px]:pb-5">
             </div>
                 <div class="text-lg font-normal w-[70%] flex flex-col items-center max-[430px]:w-[100%] max-[430px]:flex  max-[430px]:flex-col max-[430px]:text-center">
                     <p><p class="font-light">
@@ -156,42 +177,61 @@
                 </div>
         </div>
         
-        <div class="w-[50%] text-xl flex flex-col font-light max-[430px]:w-[100%]">
-            <p class="text-6xl font-semibold pb-5 max-[430px]:w-[100%] max-[430px]:text-center">About Me</p>
-            I love to build things and deploy them as being a web developer i have built some projects with time & efforts
-            Seeking for oppurtunities for upgrading my skills to next level and work in collaborative environment to gain experience 
-            You can check my Linkedin Github profiles to see my projects and consider
-                <p class="text-4xl pt-3 pb-3 font-semibold">Skills</p>
+        <div class="w-[50%] text-xl flex flex-col max-[430px]:w-[100%]">
+            <p class="text-6xl font-semibold pb-4 max-[430px]:w-[100%] max-[430px]:text-center">About Me</p>
+            <p class="text-cyan-800 playwrite-de-grund-myfont">
+                A full stack engineer expertise in front-end, back-end,  database
+                and ui designing, likes to build things and deploy them. Seeking for Oppurtunities to upgrade skills and gain experience in collaborative work environment and contribute
+            </p>
 
+                <p class="text-4xl text-sky-900 font-bold pt-3 pb-3">Skills</p>
                 <div class="flex flex-col gap-5">
 
-                    <span class="text-2xl">Web Development
-                        <p class="font-semibold text-xl">
-                            <i class="fa-brands fa-aws text-2xl text-gray-700"></i> , 
-                            MongoDB <i class="fa-solid fa-leaf text-gray-700"></i> ,
-                            mySQL <i class="fa-solid fa-database text-gray-700"></i> ,
-                            Express <i class="fa-brands fa-js text-gray-700"></i> ,
-                            <i class="fa-solid fa-t text-gray-700"></i>
-                            <i class="fa-solid fa-s text-gray-700"></i> ,
-                            Node <i class="fa-brands fa-node-js text-gray-700"></i> ,
-                            React <i class="fa-brands fa-react text-gray-700"></i> , 
-                            Tailwind <i class="fa-brands fa-css3-alt text-gray-700"></i></p>
+                    <span class="text-2xl">
+                        <p class="text-indigo-900 underline pb-2">Web Development</p>
+                            <span class="skillfont">
+                                <span>mongoDB</span> <i class="fa-solid fa-leaf text-gray-700"></i> &nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>mySQL</span> <i class="fa-solid fa-database text-gray-700"></i> &nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>express</span> <i class="fa-brands fa-js text-gray-700"></i> &nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>node</span> <i class="fa-brands fa-node-js text-gray-700"></i> &nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>react</span> <i class="fa-brands fa-react text-gray-700"></i> &nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>tailwind</span> <i class="fa-brands fa-css3-alt text-gray-700"></i>
+                            </span>
                     </span>
 
-                    <span class="text-2xl">Programming Languages
-                        <p class="font-semibold text-xl">
-                            JavaScript <i class="fa-brands fa-square-js text-gray-700"></i> ,  
-                            Java <i class="fa-brands fa-java text-gray-700"></i> , 
-                            Python <i class="fa-brands fa-python text-gray-700"></i> , 
-                            <i class="fa-brands fa-c text-gray-700"></i>++ , 
-                            Sql</p>
+                    <span class="text-2xl"><p class="text-indigo-900 underline pb-2">Programming Languages</p>
+                            <span class="skillfont">
+                                <span>Javascript</span> <i class="fa-brands fa-square-js text-gray-700"></i> &nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>Java</span> <i class="fa-brands fa-java text-gray-700 text-3xl"></i>&nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>Python</span> <i class="fa-brands fa-python text-gray-700"></i>&nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">SQL</span>
                     </span>
 
-                    <span class="text-2xl">Editing
-                        <p class="font-semibold text-xl">
-                            Photoshop <i class="fa-solid fa-wand-magic-sparkles text-gray-700"></i>, 
-                            Wondershare Filmora <i class="fa-solid fa-video text-gray-700"></i>
-                             & Designing <i class="fa-solid fa-paintbrush text-gray-700"></i></p>
+                    <span class="text-2xl"><p class="text-indigo-900 underline pb-2">Editing</p>
+                            <span class="skillfont">
+                                <span>Photoshop</span> <i class="fa-solid fa-wand-magic-sparkles text-gray-700"></i>&nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>wondershare Filmora</span> <i class="fa-solid fa-video text-gray-700"></i>&nbsp;&nbsp; 
+                            </span>
+                            <span class="skillfont">
+                                <span>Designing</span> <i class="fa-solid fa-paintbrush text-gray-700"></i>
+                            </span>
                     </span>
                 </div>
         </div>
@@ -209,7 +249,7 @@
 
     <div id="contact" class="m-20 flex flex-col gap-10">
         <h1 class="text-center text-4xl font-bold">Contact me <br>
-            <span class="text-xl font-thin">Below are the details to reach out me:</span>
+            <span class="text-xl font-medium">Below are the details to reach out me</span>
         </h1>
         <div class="flex justify-center gap-20 text-xl font-semibold max-[430px]:flex-col
         max-[430px]:gap-5">
