@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image" href="shiva.png">
+    <link rel="icon" type="image" href="shiva.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,11 +20,14 @@
      font-style: normal;
     }
     .skillfont{
-        color: rgb(30, 72, 88);
-        font-weight: bold;
-        font-size: 1.4rem;
+        color:rgb(23 37 84);
+        font-weight: 600;
+        font-size: 1.2rem;
         transition: text-shadow 0.1s ease;
         cursor: pointer;
+    }
+    .icolor{
+        color: rgb(23 37 84);
     }
     .skillfont:hover{
         text-shadow: 0.5px 0.5px 0.5px;
@@ -41,10 +44,6 @@
     .float {
       animation: float 3s ease-in-out infinite;
       display: inline-block;
-    }
-    .floating{
-        animation: float 3s ease-in-out infinite;
-        display: inline-block;
     }
     .underline-animation {
       position: relative;
@@ -95,10 +94,10 @@
         <nav class="fixed p-3 shadow-sm top-0 left-0 w-full bg-indigo-100 text-blue-900 text-2xl font-semibold max-[430px]:hidden">
             <div class="container mx-auto px-4 py-3 flex justify-between items-center">
               <div class="fixed left-20"><a href="#main">
-                  <span class="text-sky-800 text-6xl transition-all duration-100  hover:text-7xl"><i>S</i></span>
-                  <span class="text-sky-600 text-6xl transition-all duration-100 hover:text-7xl"><i>h</i></span>
-                  <span class="text-sky-600 text-6xl transition-all duration-100 hover:text-7xl"><i>i</i></span>
-                  <span class="text-sky-600 text-6xl transition-all duration-100 hover:text-7xl"><i>v</i></span>
+                  <span class="text-sky-800 text-6xl"><i>S</i></span>
+                  <span class="text-sky-600 text-6xl"><i>H</i></span>
+                  <span class="text-sky-600 text-6xl"><i>i</i></span>
+                  <span class="text-sky-600 text-6xl"><i>v</i></span>
                   <a href="#about"><span class="text-sky-600 text-5xl inline-block transition-transform duration-300 transform hover:rotate-180">@</span></a>
                 </a>
                 </div>
@@ -153,7 +152,7 @@
 
        <div class="w-[30%] max-[430px]:w-[100%] max-[430px]:flex max-[430px]:justify-center">
            <img id="float" src="dev.png" class="float max-[430px]:w-[60%] max-[430px]:hidden">
-           <img id="floating" src="dev.png" class="float min-[430px]:hidden max-[430px]:w-[60%]">
+           <img src="dev.png" class="float min-[430px]:hidden max-[430px]:w-[60%]">
        </div>
    </main>
 
@@ -162,7 +161,7 @@
 
         <div class="w-[50%] max-[430px]:w-[100%]">
             <div class="max-[430px]:w-[100%] max-[430px]:flex max-[430px]:justify-center">
-                <img src="shiva.png" class="w-[70%] pb-5 max-[430px]:w-[80%] max-[430px]:pb-5">
+                <img src="shiva.jpg" class="mb-5 rounded-full p-3 border-4 border-slate-300 w-[70%] max-[430px]:w-[80%] max-[430px]:mb-5">
             </div>
                 <div class="text-lg font-normal w-[70%] flex flex-col items-center max-[430px]:w-[100%] max-[430px]:flex  max-[430px]:flex-col max-[430px]:text-center">
                     <p><p class="font-light">
@@ -188,49 +187,52 @@
                 <div class="flex flex-col gap-5">
 
                     <span class="text-2xl">
-                        <p class="text-indigo-900 underline pb-2">Web Development</p>
+                        <p class="font-light pb-2">Web Development</p>
                             <span class="skillfont">
-                                <span>mongoDB</span> <i class="fa-solid fa-leaf text-gray-700"></i> &nbsp;&nbsp;
+                                <span>MongoDB</span> <i class="fa-solid fa-leaf icolor"></i> &nbsp;&nbsp;
                             </span>
                             <span class="skillfont">
-                                <span>mySQL</span> <i class="fa-solid fa-database text-gray-700"></i> &nbsp;&nbsp;
+                                <span>MySQL</span> <i class="fa-solid fa-database icolor"></i> &nbsp;&nbsp;
                             </span>
                             <span class="skillfont">
-                                <span>express</span> <i class="fa-brands fa-js text-gray-700"></i> &nbsp;&nbsp;
+                                <span>Express</span> <i class="fa-brands fa-js icolor"></i> &nbsp;&nbsp;
                             </span>
                             <span class="skillfont">
-                                <span>node</span> <i class="fa-brands fa-node-js text-gray-700"></i> &nbsp;&nbsp;
+                                <span>Node</span> <i class="fa-brands fa-node-js icolor"></i> &nbsp;&nbsp;
                             </span>
                             <span class="skillfont">
-                                <span>react</span> <i class="fa-brands fa-react text-gray-700"></i> &nbsp;
+                                <span>React</span> <i class="fa-brands fa-react icolor"></i>
                             </span>
                             <span class="skillfont">
-                                <span>tailwind</span> <i class="fa-brands fa-css3-alt text-gray-700"></i>
+                                <span>Tailwind</span> <i class="fa-brands fa-css3-alt icolor"></i>&nbsp;&nbsp;&nbsp;
+                            </span>
+                            <i class="fa-brands fa-aws skillfont icolor"></i>
+                    </span>
+
+                    <span class="text-2xl"><p class="font-light pb-2">Programming Languages</p>
+                            <span class="skillfont">
+                                <span>Javascript</span> <i class="fa-brands fa-square-js icolor"></i> &nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>Java</span> <i class="fa-brands fa-java icolor text-3xl"></i>&nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">
+                                <span>Python</span> <i class="fa-brands fa-python icolor"></i>&nbsp;&nbsp;
+                            </span>
+                            <span class="skillfont">SQL
+                                <i class="fa-solid fa-database icolor"></i>
                             </span>
                     </span>
 
-                    <span class="text-2xl"><p class="text-indigo-900 underline pb-2">Programming Languages</p>
+                    <span class="text-2xl"><p class="font-light pb-2">Editing</p>
                             <span class="skillfont">
-                                <span>Javascript</span> <i class="fa-brands fa-square-js text-gray-700"></i> &nbsp;&nbsp;
+                                <span>Photoshop</span> <i class="fa-solid fa-wand-magic-sparkles icolor"></i>&nbsp;&nbsp;
                             </span>
                             <span class="skillfont">
-                                <span>Java</span> <i class="fa-brands fa-java text-gray-700 text-3xl"></i>&nbsp;&nbsp;
+                                <span>Wondershare Filmora</span> <i class="fa-solid fa-video icolor"></i>&nbsp;&nbsp; 
                             </span>
                             <span class="skillfont">
-                                <span>Python</span> <i class="fa-brands fa-python text-gray-700"></i>&nbsp;&nbsp;
-                            </span>
-                            <span class="skillfont">SQL</span>
-                    </span>
-
-                    <span class="text-2xl"><p class="text-indigo-900 underline pb-2">Editing</p>
-                            <span class="skillfont">
-                                <span>Photoshop</span> <i class="fa-solid fa-wand-magic-sparkles text-gray-700"></i>&nbsp;&nbsp;
-                            </span>
-                            <span class="skillfont">
-                                <span>wondershare Filmora</span> <i class="fa-solid fa-video text-gray-700"></i>&nbsp;&nbsp; 
-                            </span>
-                            <span class="skillfont">
-                                <span>Designing</span> <i class="fa-solid fa-paintbrush text-gray-700"></i>
+                                <span>Designing</span> <i class="fa-solid fa-paintbrush icolor"></i>
                             </span>
                     </span>
                 </div>
